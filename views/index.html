@@ -1,0 +1,33 @@
+<!-- lec minute 1 to minute 51s
+     <html>
+    <body>
+        <img src="logo.jpeg"/>
+        <h1>Welcome to FIT2095 L2!!!</h1>
+    </body>
+</html> -->
+
+<html>
+<body>
+    <h1>Welcome to <%= userName %></h1>
+    <ul>
+        <% for(let i = 0;i<ar.length;i++){%>
+        <li>
+            <%= ar[i].username %> | <%= ar[i].userage %>
+        </li>
+        <%} %>
+    </ul>
+
+
+
+
+
+
+    <form action="/data" method="POST">
+        User Name:
+        <input type="text" name="username" /> </br>
+        User Age:
+        <input type="number" name="userage" /> </br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
